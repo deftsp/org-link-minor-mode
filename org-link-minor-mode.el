@@ -111,8 +111,8 @@
           (setq-local font-lock-unfontify-region-function
                       'org-link-minor-mode-unfontify-region)
           (setq-local org-descriptive-links org-descriptive-links)
-          (condition-case nil (require 'org-man)
-            (error (message "Problems while trying to load feature `org-man'")))
+          (condition-case nil (require 'ol-man)
+            (error (message "Problems while trying to load feature `ol-man'")))
           ;; Set to non-descriptive and then switch to descriptive links
           (setq org-descriptive-links nil)
           (org-toggle-link-display))
